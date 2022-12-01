@@ -2,9 +2,6 @@
 
 
 <?php include("config.php");
-
-    $grupo = selectAllPessoa();
-    
     
 ?>
 
