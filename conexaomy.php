@@ -5,7 +5,7 @@ $user = getenv("databaseuser");
 $pass = getenv("databasepassword");
 $db =   getenv("databasename");
 
-$con=mysqli_connect($host, $user, $pass, $db);
+$con=mysqli_connect($host,$user,$pass,$db);
 
 if(!$con) 
 {
