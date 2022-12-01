@@ -18,6 +18,7 @@ if(isset($_POST["acao"])){
 function abrirBanco() {
     $conexao = new mysqli("172.17.0.9", "userIYE", "BNuywMs74q1kEGav", "sampledb");
     return $conexao;
+    echo "teste"
 }
 
 // Função responsável inseir uma pessoa no meu banco de dados
