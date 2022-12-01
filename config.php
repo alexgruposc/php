@@ -17,6 +17,7 @@ if(!$con)
 else
 {
 	echo("Connected");
+	ech "$host";
 }
 
 
