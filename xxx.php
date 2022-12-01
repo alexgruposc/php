@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 
-<?php
 
-session_start();
-require_once("config.php");
+<?php include("config.php");
+
+    $grupo = selectAllPessoa();
+    
     
 ?>
 
