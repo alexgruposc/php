@@ -14,16 +14,9 @@ if(isset($_POST["acao"])){
 }
 
 
-$host = getenv("MYSQL_SERVICE_HOST");
-$port = getenv("MYSQL_SERVICE_PORT");
-$user = getenv("databaseuser");
-$pass = getenv("databasepassword");
-$db =   getenv("databasename");
-
-
 // Responsável por criar uma conexão com meu banco
 function abrirBanco() {
-    $conexao = new mysqli($host,$user,$pass,$db);
+    $conexao = new mysqli("172.17.0.9", "userIYE", "BNuywMs74q1kEGav", "sampledb");
     return $conexao;
 }
 
