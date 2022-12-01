@@ -3,7 +3,7 @@ $host = getenv("MYSQL_SERVICE_HOST");
 $user = getenv("databaseuser");
 $pass = getenv("databasepassword");
 $db =   getenv("databasename");
-$link = mysqli_connect($host, $user, $pass, $db);
+$link=mysqli_connect($host, $user, $pass, $db);
 
 echo $link";
 
