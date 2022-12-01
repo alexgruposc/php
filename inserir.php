@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <meta charset="UTF-8">
 <div class="container">
-    <form name="dadosPessoa" action="conexao.php" method="post">
+    <form name="dadosPessoa" action="config.php" method="post">
         <table>
             <tbody>
                 <tr>
