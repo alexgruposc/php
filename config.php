@@ -4,7 +4,7 @@
 $host = "mysql";
 $user = "root";
 $pass = "password";
-$db="roj";
+$db="sampledb";
 
 $con=mysqli_connect($host,$user,$pass,$db);
 
