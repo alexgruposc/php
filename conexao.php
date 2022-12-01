@@ -18,12 +18,12 @@ if(isset($_POST["acao"])){
 function abrirBanco() {
     
 $host = getenv("MYSQL_SERVICE_HOST");
-$port = getenv("MYSQL_SERVICE_PORT");
+
 $user = getenv("databaseuser");
 $pass = getenv("databasepassword");
 $db =   getenv("databasename");
     
-    $conexao = new mysqli($host, $user, $pass, "sampledb");
+    $conexao = new mysqli($host, $user, $pass, $db);
     return $conexao;
 }
 
