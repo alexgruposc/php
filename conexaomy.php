@@ -1,5 +1,9 @@
 <?php
-$link = mysqli_connect("HOST", "USUARIO", "SENHA", "BASE");
+$host = getenv("MYSQL_SERVICE_HOST");
+$user = getenv("databaseuser");
+$pass = getenv("databasepassword");
+$db =   getenv("databasename");
+$link = mysqli_connect($host, $user, $pass, $db);
  
 if (!$link) {
     echo "Error: Falha ao conectar-se com o banco de dados MySQL." . PHP_EOL;
