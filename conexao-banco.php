@@ -1,14 +1,8 @@
 <?php
-$link = mysqli_connect("HOST", "USUARIO", "SENHA", "BASE");
- 
+$link = mysql_connect('HOST', 'BASE', 'SENHA');
 if (!$link) {
-    echo "Error: Falha ao conectar-se com o banco de dados MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
+    die('Erro ao conectar ao banco: ' . mysql_error());
 }
- 
-echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL." . PHP_EOL;
- 
-mysqli_close($link);
+echo 'Conectado com sucesso';
+mysql_close($link);
 ?> 
