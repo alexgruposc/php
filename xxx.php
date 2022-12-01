@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
+<?php include("conexao.php");
 
-<?php include("config.php");
+    $grupo = selectAllPessoa();
     
 ?>
 
