@@ -59,7 +59,7 @@
           </tbody>
      </table>
       <div class="text-center">
-           <button type="button" class="btn btn-primary"><a href="inserir.php">Adicionar pessoa</a></button>
+           <button type="button" style="background-color:red" class="btn btn-primary"><a href="inserir.php">Adicionar pessoa</a></button>
       </div>
        <?php
             // Função para formatar a data
