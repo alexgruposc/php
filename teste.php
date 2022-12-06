@@ -7,8 +7,12 @@ $pass = getenv("databasepassword");
 $db =   getenv("databasename");
     
  echo "teste";
+/n
  echo $host;
- echo $post;
+/n
+echo $post;
+/n
  echo $user;
+/n
     
 ?>
