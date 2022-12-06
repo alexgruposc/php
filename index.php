@@ -33,6 +33,7 @@
           </thead>
           <tbody>
              <?php 
+              include("relogio.php");
                 foreach($grupo as $pessoa) { ?>
 
                    <tr>
