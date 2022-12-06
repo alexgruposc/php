@@ -16,14 +16,14 @@ if(isset($_POST["acao"])){
 
 // Responsável por criar uma conexão com meu banco
 function abrirBanco() {
-echo "$MYSQL_SERVICE_HOST";
-//$host = getenv("MYSQL_SERVICE_HOST");
+
+$host = getenv("MYSQL_SERVICE_HOST");
 
 $user = getenv("databaseuser");
 $pass = getenv("databasepassword");
 $db =   getenv("databasename");
     
-    $conexao = new mysqli("172.17.0.11", $user, $pass, $db);
+    $conexao = new mysqli($host, $user, $pass, $db);
     return $conexao;
 }
 
