@@ -6,13 +6,13 @@ $user = getenv("databaseuser");
 $pass = getenv("databasepassword");
 $db =   getenv("databasename");
     
- echo "teste" \n;
+ echo (teste" \n);
 
- echo $host \n;
+ echo ($host \n);
 
-echo $post \n;
+echo ($post \n);
 
- echo $user \n;
+ echo ($user \n);
 
     
 ?>
