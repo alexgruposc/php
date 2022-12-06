@@ -16,7 +16,7 @@ if(isset($_POST["acao"])){
 
 // Responsável por criar uma conexão com meu banco
 function abrirBanco() {
-echo "$MYSQL_SERVICE_HOST"
+echo "$MYSQL_SERVICE_HOST";
 $host = getenv("MYSQL_SERVICE_HOST");
 
 $user = getenv("databaseuser");
